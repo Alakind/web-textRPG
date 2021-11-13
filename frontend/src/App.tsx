@@ -1,9 +1,15 @@
 import React from 'react';
+import {
+  InputPanel, CharacterPanel, StatusPanel, JournalPanel,
+} from './pages/game/panels';
 
 function App() {
   return (
     <div>
-      <h1>Hehe hello</h1>
+      <InputPanel />
+      <JournalPanel />
+      <CharacterPanel />
+      <StatusPanel />
     </div>
   );
 }
