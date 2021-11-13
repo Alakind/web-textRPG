@@ -3,7 +3,7 @@ import '../panels.css';
 
 export function CharacterPanel() {
   return (
-    <div className="leftPanel">
+    <div>
       <h3>Character panel</h3>
     </div>
   );
