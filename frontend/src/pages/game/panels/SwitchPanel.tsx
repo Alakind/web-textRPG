@@ -1,5 +1,5 @@
 import React from 'react';
-import '../panels.css';
+import './panels.css';
 
 interface Props {
     firstComponent: any,

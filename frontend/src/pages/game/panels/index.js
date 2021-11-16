@@ -1,8 +1,8 @@
-import { InputPanel } from './inputPanel/InputPanel';
-import { CharacterPanel } from './characterPanel/CharacterPanel';
-import { StatusPanel } from './statusPanel/StatusPanel';
-import { JournalPanel } from './journalPanel/JournalPanel';
-import { SwitchPanel } from './switchPanel/SwitchPanel';
+import { InputPanel } from './InputPanel';
+import { CharacterPanel } from './CharacterPanel';
+import { StatusPanel } from './StatusPanel';
+import { JournalPanel } from './JournalPanel';
+import { SwitchPanel } from './SwitchPanel';
 
 export {
   InputPanel,
