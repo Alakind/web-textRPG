@@ -36,8 +36,6 @@ export function SwitchPanel({
         <span className={secondClass}>{secondName}</span>
       </span>
       <span>
-        {firstComponent}
-        {secondComponent}
         {isFirstOpened
           ? <FirstComponent />
           : <SecondComponent />}
