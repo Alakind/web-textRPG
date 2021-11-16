@@ -3,7 +3,7 @@ import '../panels.css';
 
 export function JournalPanel() {
   return (
-    <div>
+    <div className="tabPanel">
       <h3>Journal panel</h3>
     </div>
   );

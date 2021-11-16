@@ -2,8 +2,8 @@ import React from 'react';
 import '../panels.css';
 
 interface Props {
-    firstComponent: React.ReactNode,
-    secondComponent: React.ReactNode,
+    firstComponent: any,
+    secondComponent: any,
     firstName: string,
     secondName: string,
     isFirstOpened: boolean,
@@ -26,16 +26,21 @@ export function SwitchPanel({
     firstClass = 'inactiveTab';
   }
 
+  const FirstComponent = firstComponent;
+  const SecondComponent = secondComponent;
+
   return (
     <span className="leftPanel">
       <span className="tabs">
         <span className={firstClass}>{firstName}</span>
         <span className={secondClass}>{secondName}</span>
       </span>
-      <span className="tabPanel">
+      <span>
+        {firstComponent}
+        {secondComponent}
         {isFirstOpened
-          ? firstComponent
-          : secondComponent}
+          ? <FirstComponent />
+          : <SecondComponent />}
       </span>
     </span>
   );
