@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   InputPanel, CharacterPanel, StatusPanel, JournalPanel, SwitchPanel,
-} from './pages/game/panels';
+} from './pages/game/components/panels';
 
 function App() {
   return (
