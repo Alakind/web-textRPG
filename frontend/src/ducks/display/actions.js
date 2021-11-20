@@ -11,4 +11,9 @@ export const displayActions = {
       type: displayTypes.OPEN_CHARACTER_TAB,
     };
   },
+  switch_tab() {
+    return {
+      type: displayTypes.SWITCH_TAB,
+    };
+  },
 };

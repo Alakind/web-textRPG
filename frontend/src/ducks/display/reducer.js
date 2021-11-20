@@ -17,6 +17,11 @@ export function displayReducer(state = INITIAL_STATE, action) {
         ...state,
         characterTabOpened: false,
       };
+    case displayTypes.SWITCH_TAB:
+      return {
+        ...state,
+        characterTabOpened: !state.characterTabOpened,
+      };
     default:
       return state;
   }
