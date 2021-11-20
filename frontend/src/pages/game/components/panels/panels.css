@@ -9,25 +9,24 @@
 }
 
 .tabs {
-    height: 10%;
+    height: 5%;
     width: 30%;
     position: fixed;
     top: 0;
 }
 
 .activeTab {
-    height: 5%;
-    width: 15%;
-    position: fixed;
+    height: 100%;
+    width: 50%;
+    float: left;
     font-weight: bold;
     background-color: rgb(248, 203, 118);
 }
 
 .inactiveTab {
-    height: 5%;
-    width: 15%;
-    position: fixed;
-    left: 15%;
+    height: 100%;
+    width: 50%;
+    float: left;
     color: rgba(0, 0, 0, 0.7);
     background-color: rgb(252, 229, 186);
 

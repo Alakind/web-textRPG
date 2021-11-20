@@ -1,8 +1,8 @@
-import { put } from '@redux-saga/core/effects';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { displayActions, displaySelectors } from '../../../../ducks/display';
 import { SwitchPanel } from '../../components/panels';
+import { store } from '../../../../store';
 
 interface Props {
     firstComponent: any,
@@ -20,8 +20,7 @@ export function SwitchPanelContainer({
   const isFirstOpened = useSelector(displaySelectors.selectCharacterTabOpened);
 
   const handleInactiveOpen = () => {
-    console.log('hehe');
-    put(displayActions.switchTab());
+    store.dispatch(displayActions.switchTab());
   };
 
   return (
