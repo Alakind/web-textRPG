@@ -1,17 +1,17 @@
 import React from 'react';
 import {
-  InputPanel, CharacterPanel, StatusPanel, JournalPanel, SwitchPanel,
+  InputPanel, CharacterPanel, StatusPanel, JournalPanel,
 } from './pages/game/components/panels';
+import { SwitchPanelContainer } from './pages/game/containers/panels/SwitchPanelContainer';
 
 function App() {
   return (
     <div>
-      <SwitchPanel
+      <SwitchPanelContainer
         firstComponent={CharacterPanel}
         secondComponent={JournalPanel}
         firstName="Character"
         secondName="Journal"
-        isFirstOpened
       />
       <InputPanel />
       <StatusPanel />

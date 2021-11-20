@@ -7,6 +7,7 @@ interface Props {
     firstName: string,
     secondName: string,
     isFirstOpened: boolean,
+    handleInactiveOpen: any,
 }
 
 export function SwitchPanel({
@@ -15,25 +16,28 @@ export function SwitchPanel({
   firstName,
   secondName,
   isFirstOpened,
+  handleInactiveOpen,
 }: Props) {
-  let firstClass;
-  let secondClass;
-  if (isFirstOpened) {
-    firstClass = 'activeTab';
-    secondClass = 'inactiveTab';
-  } else {
-    secondClass = 'activeTab';
-    firstClass = 'inactiveTab';
-  }
-
   const FirstComponent = firstComponent;
   const SecondComponent = secondComponent;
 
   return (
     <span className="leftPanel">
       <span className="tabs">
-        <span className={firstClass}>{firstName}</span>
-        <span className={secondClass}>{secondName}</span>
+        <button
+          type="button"
+          className={isFirstOpened ? 'activeTab' : 'inactiveTab'}
+          onClick={isFirstOpened ? () => {} : handleInactiveOpen}
+        >
+          {firstName}
+        </button>
+        <button
+          type="button"
+          className={isFirstOpened ? 'inactiveTab' : 'activeTab'}
+          onClick={isFirstOpened ? handleInactiveOpen : () => {}}
+        >
+          {secondName}
+        </button>
       </span>
       <span>
         {isFirstOpened
