@@ -1,30 +1,30 @@
 import { CharacterOptions } from './options';
 
 export class Character {
-    private name: string;
+    public name: string;
 
-    private classType: string;
+    public classType: string;
 
-    private race: string;
+    public race: string;
 
-    private level: number;
+    public level: number;
 
-    private exp: number;
+    public exp: number;
 
-    private health: number;
+    public health: number;
 
-    private maxHealth: number;
+    public maxHealth: number;
 
-    private mana: number;
+    public mana: number;
 
-    private maxMana: number;
+    public maxMana: number;
 
     // TODO: SKILLBOOK
-    private money: number;
+    public money: number;
 
-    private damage: number;
+    public damage: number;
 
-    private armorClass: number;
+    public armorClass: number;
 
     constructor({
       name,
@@ -54,5 +54,10 @@ export class Character {
       this.money = money;
       this.damage = damage;
       this.armorClass = armorClass;
+    }
+
+    die() {
+      console.log(`${this.name} died`);
+      // Will dispatch an action
     }
 }
