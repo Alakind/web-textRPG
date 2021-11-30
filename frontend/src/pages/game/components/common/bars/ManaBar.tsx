@@ -6,7 +6,7 @@ interface Props {
     maxMana: number,
 }
 
-export function HealthBar({ mana, maxMana }: Props) {
+export function ManaBar({ mana, maxMana }: Props) {
   return (
     <svg className="bar">
       <rect className="manaBarOuter" />

@@ -1,0 +1,8 @@
+.characterInfo {
+    height: 50%;
+    width: 30%;
+    position: fixed;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: burlywood;
+}

@@ -6,7 +6,7 @@ export const playerMock = new Character({
   race: 'human',
   level: 2,
   exp: 57,
-  health: 100,
+  health: 70,
   maxHealth: 100,
   mana: 20,
   maxMana: 50,
