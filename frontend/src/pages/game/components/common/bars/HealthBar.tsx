@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../../styles/common/bars.css';
+import './bars.css';
 
 interface Props {
     health: number,

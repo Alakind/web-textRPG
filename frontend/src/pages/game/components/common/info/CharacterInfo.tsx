@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../../styles/common/info.css';
+import './info.css';
 import { HealthBar } from '../bars/HealthBar';
 import { ManaBar } from '../bars/ManaBar';
 
