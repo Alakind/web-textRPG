@@ -1,4 +1,5 @@
 import React from 'react';
+import './terminal.css';
 
 interface Props {
   text: string,
@@ -6,7 +7,7 @@ interface Props {
 
 export function TerminalOutput({ text } : Props) {
   return (
-    <span>
+    <span className="terminalOutput">
       <p>{text}</p>
     </span>
   );

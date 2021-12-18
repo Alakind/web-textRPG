@@ -1,0 +1,8 @@
+.terminalOutput {
+    height: 50%;
+    width: 96%;
+    float: left;
+    align-self: center;
+    background-color: rgb(0, 0, 0);
+    margin: 2%;
+}
