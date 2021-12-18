@@ -12,7 +12,7 @@ export function CharacterPanel() {
       <CharacterInfo
         name={character.name}
         classType={character.classType}
-        race={character.classType}
+        race={character.race}
         level={character.level}
         exp={character.exp}
         health={character.health}

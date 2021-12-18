@@ -20,9 +20,29 @@ export function CharacterInfo({
 }: Props) {
   return (
     <span className="characterInfo">
-      <span>info</span>
+      <h3>{name}</h3>
       <HealthBar health={health} maxHealth={maxHealth} />
       <ManaBar mana={mana} maxMana={maxMana} />
+      <p>
+        Level:
+        {' '}
+        {level}
+      </p>
+      <p>
+        Exp:
+        {' '}
+        {exp}
+      </p>
+      <p>
+        Class:
+        {' '}
+        {classType}
+      </p>
+      <p>
+        Race:
+        {' '}
+        {race}
+      </p>
     </span>
   );
 }
