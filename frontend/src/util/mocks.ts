@@ -1,6 +1,7 @@
 import { Character } from '../classes/character';
 
 export const playerMock = new Character({
+  id: 0,
   name: 'Eragon',
   classType: 'warrior',
   race: 'human',

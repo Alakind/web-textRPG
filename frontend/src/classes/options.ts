@@ -6,6 +6,7 @@ export interface UserOptions {
 }
 
 export interface CharacterOptions {
+    id: number;
     name: string;
     classType: string;
     race: string;

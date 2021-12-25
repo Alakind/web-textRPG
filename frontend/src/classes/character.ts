@@ -1,6 +1,8 @@
 import { CharacterOptions } from './options';
 
 export class Character {
+    public id: number;
+
     public name: string;
 
     public classType: string;
@@ -27,6 +29,7 @@ export class Character {
     public armorClass: number;
 
     constructor({
+      id,
       name,
       classType,
       race,
@@ -41,6 +44,7 @@ export class Character {
       damage,
       armorClass,
     } : CharacterOptions) {
+      this.id = id;
       this.name = name;
       this.classType = classType;
       this.race = race;
