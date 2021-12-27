@@ -1,10 +1,28 @@
 import { characterTypes } from './types';
 
 export const characterActions = {
-  loadNewCharacter(id: number) {
+  loadCharacter(id: number) {
     return {
-      type: characterTypes.LOAD_NEW_CHARACTER,
+      type: characterTypes.LOAD_CHARACTER,
       id,
+    };
+  },
+  loadCharacterRequest(id: number) {
+    return {
+      type: characterTypes.LOAD_CHARACTER_REQUEST,
+      id,
+    };
+  },
+  loadCharacterSuccess(character: any) {
+    return {
+      type: characterTypes.LOAD_CHARACTER_SUCCESS,
+      character,
+    };
+  },
+  loadCharacterError(error: any) {
+    return {
+      type: characterTypes.LOAD_CHARACTER_ERROR,
+      error,
     };
   },
 
