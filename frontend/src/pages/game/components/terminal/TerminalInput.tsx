@@ -5,10 +5,8 @@ interface Props {
   text: string,
 }
 
-export function TerminalInput({ text } : Props) {
-  return (
-    <span className="terminalInput">
-      <p>{text}</p>
-    </span>
-  );
-}
+export const TerminalInput: React.FC<Props> = ({ text }) => (
+  <span className="terminalInput">
+    <p>{text}</p>
+  </span>
+);
