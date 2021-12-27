@@ -16,7 +16,7 @@ export function decisionsReducer(state = INITIAL_STATE, action) {
       return {
         ...state,
         output: state.output.concat(action.option.description),
-        location: action.option.destination,
+        location: action.option.destination ? action.option.destination : state.location,
       };
     case decisionsTypes.TRAVEL:
       return {
