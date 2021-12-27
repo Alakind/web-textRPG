@@ -2,11 +2,14 @@ import React from 'react';
 import './terminal.css';
 
 interface Props {
-  text: string,
+  options: object[],
 }
 
-export const TerminalInput: React.FC<Props> = ({ text }) => (
+/* eslint-disable react/no-array-index-key */
+export const TerminalInput: React.FC<Props> = ({ options }) => (
   <span className="terminalInput">
-    <p>{text}</p>
+    <ul>
+      {options.map((option, index) => <li key={index}>{option}</li>)}
+    </ul>
   </span>
 );

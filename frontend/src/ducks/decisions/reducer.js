@@ -2,6 +2,7 @@ import { decisionsTypes } from './types';
 
 const INITIAL_STATE = {
   location: 'road',
+  options: [],
 };
 
 export function decisionsReducer(state = INITIAL_STATE, action) {
