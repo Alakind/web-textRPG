@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { characterActions } from './ducks/character';
 import {
-  InputPanel, CharacterPanel, StatusPanel, JournalPanel,
+  InputPanel, CharacterPanel, JournalPanel,
 } from './pages/game/components/panels';
+import { StatusPanelContainer } from './pages/game/containers/panels/StatusPanelContainer';
 import { SwitchPanelContainer } from './pages/game/containers/panels/SwitchPanelContainer';
 import { store } from './store';
 
@@ -20,7 +21,7 @@ function App() {
         secondName="Journal"
       />
       <InputPanel />
-      <StatusPanel />
+      <StatusPanelContainer />
     </div>
   );
 }
